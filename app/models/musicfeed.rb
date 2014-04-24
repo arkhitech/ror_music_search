@@ -9,7 +9,10 @@ class Musicfeed < ActiveRecord::Base
 #    :country, :currency, :primaryGenreName, :radioStationUrl
   
 
-
-#    validates_uniqueness_of :trackId
-
+  define_index do
+    indexes artistName
+    indexes trackName
+    
+  end
+#    validates_uniqueness_of :trackIndex
 end
