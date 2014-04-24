@@ -1,0 +1,2 @@
+class MusicfeedsController < ApplicationController
+end

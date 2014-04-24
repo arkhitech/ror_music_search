@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wrapperType: MyString
+  kind: MyString
+  artistId: 1
+  collectionId: 1
+  trackId: 1
+  artistName: MyString
+  collectionName: MyText
+  trackName: MyString
+  collectionCensoredName: MyText
+  trackCensoredName: MyString
+  artistViewUrl: MyString
+  collectionViewUrl: MyString
+  trackViewUrl: MyString
+  previewUrl: MyString
+  artworkUrl30: MyString
+  artworkUrl60: MyString
+  artworkUrl100: MyString
+  collectionPrice: 9.99
+  trackPrice: 9.99
+  releaseDate: 2014-04-24 13:25:15
+  collectionExplicitness: MyString
+  trackExplicitness: MyString
+  discCount: 1
+  discNumber: 1
+  trackCount: 1
+  trackNumber: 1
+  trackTimeMillis: 1
+  country: MyString
+  currency: MyString
+  primaryGenreName: MyString
+  radioStationUrl: MyString
+
+two:
+  wrapperType: MyString
+  kind: MyString
+  artistId: 1
+  collectionId: 1
+  trackId: 1
+  artistName: MyString
+  collectionName: MyText
+  trackName: MyString
+  collectionCensoredName: MyText
+  trackCensoredName: MyString
+  artistViewUrl: MyString
+  collectionViewUrl: MyString
+  trackViewUrl: MyString
+  previewUrl: MyString
+  artworkUrl30: MyString
+  artworkUrl60: MyString
+  artworkUrl100: MyString
+  collectionPrice: 9.99
+  trackPrice: 9.99
+  releaseDate: 2014-04-24 13:25:15
+  collectionExplicitness: MyString
+  trackExplicitness: MyString
+  discCount: 1
+  discNumber: 1
+  trackCount: 1
+  trackNumber: 1
+  trackTimeMillis: 1
+  country: MyString
+  currency: MyString
+  primaryGenreName: MyString
+  radioStationUrl: MyString
