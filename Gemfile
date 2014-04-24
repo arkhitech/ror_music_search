@@ -15,6 +15,8 @@ group :development, :test do
   gem 'passenger'
 end
 
+gem 'feedjira'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
