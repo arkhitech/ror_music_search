@@ -6,6 +6,8 @@ gem 'rails', '4.0.4'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
+gem 'kaminari'
+
 group :development, :test do
   gem 'mysql2',          '~> 0.3.13', :platform => :ruby
   gem 'jdbc-mysql',      '~> 5.1.28', :platform => :jruby

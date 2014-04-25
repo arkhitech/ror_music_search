@@ -14,7 +14,11 @@
           ng-click="showMusicfeed(musicfeed, $index)">
         <h3 ng-class="{active: $index == selectedRow}">
           {{musicfeed.trackName}}
-          <small>({{musicfeed.trackTimeMillis}})</small></h3>
+          <small>(   {{ musicfeed.trackTimeMillis/60000 % 60| number:00}}:
+                      {{ musicfeed.trackTimeMillis/1000 %60| number:00}} )
+            <%#*{{musicfeed.trackTimeMillis/3600000 | number:00}} :%>
+         
+          </small></h3>
       </li>
     </ul>
   </div>

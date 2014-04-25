@@ -1,16 +1,24 @@
-<div id="musicfeed-list-container">
-  <p>
-    <%=link_to "Home", root_path%>
-  </p>
+<div id="searchresults-list-container">
+
+<h2 style="text-indent:50px"> <%=link_to " Home", root_path%> </h2>
+</div>
+  
+<div id="searchresults-view-container">  
+  <h1 style="color: green;text-indent: 25px"><i>Search Results</i></h1>
   
     <ul>
       <%unless @musicfeed_search_results.count<0%>
       <% @musicfeed_search_results.each do |search|%>
       <li>
         <h3><%=search.trackName%> 
-        <small>(<%=search.trackTimeMillis%>)</small>
+        <small>(<%=Time.at(search.trackTimeMillis/1000).utc.strftime("%H:%M:%S")%>)</small>
+        
       </h3>
+      <p><%=search.collectionName%> : Released at <%=search.releaseDate%> :
+          <%=link_to "Listen on ITunes", search.radioStationUrl%>"
+       </p>
        </li>
+       <hr>
       <%end%>
          <%else%>
           <li>
@@ -18,4 +26,6 @@
           </li>
       <%end%>
     </ul>
+    <%= paginate @musicfeed_search_results %>
   </div>
+
