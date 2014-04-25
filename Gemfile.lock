@@ -100,6 +100,7 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
+    sphinx (2.1.1.3712)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -139,5 +140,6 @@ DEPENDENCIES
   rails (= 4.0.4)
   rspec-rails
   sass-rails (~> 4.0.2)
+  sphinx
   thinking-sphinx (~> 3.1.1)
   uglifier (>= 1.3.0)

@@ -8,11 +8,7 @@ class Musicfeed < ActiveRecord::Base
 #    :discCount, :discNumber, :trackCount, :trackNumber, :trackTimeMillis,
 #    :country, :currency, :primaryGenreName, :radioStationUrl
   
-
-  define_index do
-    indexes artistName
-    indexes trackName
-    
-  end
 #    validates_uniqueness_of :trackIndex
+
+  
 end

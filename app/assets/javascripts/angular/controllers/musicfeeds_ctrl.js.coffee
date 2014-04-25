@@ -1,4 +1,4 @@
-App.controller 'MusicfeedsCtrl', ['$scope', 'Musicfeed', ($scope, Musicfeed) ->
+App.controller 'MusicfeedsCtrl', ['$scope', 'Musicfeed','Search', ($scope, Musicfeed,Search) ->
   # Attributes accessible on the view
   $scope.selectedMusicfeed = null
   $scope.selectedRow        = null
@@ -12,4 +12,6 @@ App.controller 'MusicfeedsCtrl', ['$scope', 'Musicfeed', ($scope, Musicfeed) ->
   $scope.showMusicfeed = (musicfeed, row) ->
     $scope.selectedMusicfeed = musicfeed
     $scope.selectedRow = row
+    
+  #  $scope.search = Search.query(search_term)  
 ]

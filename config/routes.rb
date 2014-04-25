@@ -1,10 +1,14 @@
 IsearchMusic::Application.routes.draw do
   get "home/index"
+  get "/home/search_musicfeeds",:to => "home#search_musicfeeds"
+  post "/home/search_musicfeeds",:to => "home#search_musicfeeds"
+#  
 #  resources :musicfeeds
   scope :api do
     get "/musicfeeds(.:format)" => "musicfeeds#index"
     get "/musicfeeds/:id(.:format)" => "musicfeeds#show"
   end
+  
 root to: "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

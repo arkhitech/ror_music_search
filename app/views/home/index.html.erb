@@ -1,6 +1,14 @@
 <div ng-controller="MusicfeedsCtrl">
-  
-<div id="musicfeed-list-container" >
+
+  <div id="musicfeed-list-container" >
+    <p>
+      <%= form_tag :controller => 'home', :action => 'search_musicfeeds', :method => 'post' do %>
+        <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+        <%= submit_tag "Search", :name => nil %> 
+
+      <% end %>
+    </p>
+
     <ul>
       <li ng-repeat="musicfeed in musicfeeds"
           ng-click="showMusicfeed(musicfeed, $index)">
@@ -14,15 +22,15 @@
   <div id="musicfeed-view-container" ng-show="selectedMusicfeed">
     <h2>{{selectedMusicfeed.trackName}}</h2>
     <p>{{selectedMusicfeed.collectionName}}</p>
-    <%#*<p>{{selectedMusicfeed.radioStationUrl:}}</p>%>
-    <%#*<div flow-player="" id="player"></div>%>
     <p>
       Released at {{selectedMusicfeed.releaseDate | date: 'mediumDate'}}
       - <a ng-href="{{selectedMusicfeed.radioStationUrl}}">{{selectedMusicfeed.radioStationUrl}}</a>
     </p>
 
   </div>
-  
-  
- 
+
+
+
+
+
 </div>

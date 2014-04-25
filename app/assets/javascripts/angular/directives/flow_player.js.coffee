@@ -4,7 +4,7 @@ App.directive 'flowPlayer', ->
     # Trigger when the selectedScreencast function is called
     # with a screencast
     scope.$watch 'selectedMusicfeed', (musicfeed) ->
-      if screencast
+      if musicfeed
 
         # See http://flowplayer.org/docs/
         element.flowplayer

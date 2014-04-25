@@ -1,0 +1,21 @@
+<div id="musicfeed-list-container">
+  <p>
+    <%=link_to "Home", root_path%>
+  </p>
+  
+    <ul>
+      <%unless @musicfeed_search_results.count<0%>
+      <% @musicfeed_search_results.each do |search|%>
+      <li>
+        <h3><%=search.trackName%> 
+        <small>(<%=search.trackTimeMillis%>)</small>
+      </h3>
+       </li>
+      <%end%>
+         <%else%>
+          <li>
+            <h3> No Results Found</h3>
+          </li>
+      <%end%>
+    </ul>
+  </div>

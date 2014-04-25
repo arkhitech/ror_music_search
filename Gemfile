@@ -10,6 +10,7 @@ group :development, :test do
   gem 'mysql2',          '~> 0.3.13', :platform => :ruby
   gem 'jdbc-mysql',      '~> 5.1.28', :platform => :jruby
   gem 'thinking-sphinx', '~> 3.1.1'
+  gem 'sphinx'
   gem 'debugger'
   gem 'rspec-rails'
   gem 'passenger'
